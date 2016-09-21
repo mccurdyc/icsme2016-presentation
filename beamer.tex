@@ -1,0 +1,46 @@
+\documentclass[hyperref={pdfpagemode=FullScreen},xcolor=dvipsnames]{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Wronki}
+
+% Referring URLs
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true
+	linkcolor=blue
+	filecolor=magenta,
+	urlcolor=cyan,
+	}
+
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage{tikz}
+\usepackage{color}
+
+\urlstyle{same}
+
+\title{``Smart'' Visualization}
+\subtitle{\textit{a learning agent for visualizing data}}
+\author{\textit{Colton J. McCurdy}}
+\date{15 March 2016}
+
+\begin{document}
+
+% for the title frame above to be shown
+\kTitleFrame
+
+% \begin{frame}{Overview}
+%     \tableofcontents
+% \end{frame}
+
+\section{Introduction}
+\input{sections/introduction.tex}
+
+\section{Data Visualization}
+\input{sections/datavis.tex}
+
+\section{Conclusion}
+\input{sections/conclusion.tex}
+
+\kQuestionsFrame{\textit{Thank you!} / Questions?}
+
+\end{document}

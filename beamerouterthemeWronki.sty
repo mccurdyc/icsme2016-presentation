@@ -1,0 +1,22 @@
+\mode<presentation>
+
+% Frame title
+\defbeamertemplate*{frametitle}{Wronki}[1][]
+{
+   \ifx\insertframesubtitle\@empty%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.81cm]{frametitle}
+  \begin{tikzpicture}
+      {\node[right, kan-darkblue,font=\large] at (3.2,.81){\insertframetitle};}%
+  \end{tikzpicture}
+  \end{beamercolorbox}
+      \else%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.5cm]{frametitle}
+  \begin{tikzpicture}
+      {\node[anchor= west, kan-darkblue,font=\huge] at (3.2,0.70){\insertframetitle};%
+       \node[anchor= west, kan-limon,font=\large] at (3.2,0.1){\insertframesubtitle};}%
+  \end{tikzpicture}
+  \end{beamercolorbox}
+      \fi
+}
+
+\mode<all>

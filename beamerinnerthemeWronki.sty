@@ -1,0 +1,79 @@
+\mode<presentation>
+
+\RequirePackage{fontspec}
+\RequirePackage{pdftexcmds}
+\usepackage{fontspec}
+\usefonttheme{serif} % default family is serif
+\setmainfont{Merriweather}
+
+\setbeamertemplate{background}{%
+    \setbeamercolor{background canvas}{bg=kan-dark-background}
+    \ifnum\c@framenumber=1%
+    \fi%
+}
+
+% Title page
+\defbeamertemplate*{title page}{Wronki}[1][]
+{%
+    \begin{center}
+        \textcolor{kan-text}{
+            \Huge{\inserttitle}\\
+            \Large{\insertsubtitle}\\
+            \vspace*{20px}
+            \begin{center}
+            \includegraphics[scale=0.2]{images/v3-logo-circ.png}
+            \end{center}
+            \vspace*{20px}
+            \large{\insertauthor}\\
+            \vspace*{10px}\normalsize{\insertdate}\\
+            \ifx\insertdate\@empty%
+            \else%
+                \vspace*{0.1cm}
+                {\usebeamerfont{date}\textcolor{kan-light-background}{\insertdate}}
+            \fi%
+        }
+    \end{center}
+}
+
+% Title frame
+\newcommand{\kTitleFrame}[0]{%
+    \begin{frame}
+        \titlepage
+    \end{frame}
+}
+
+% Questions frame
+\newcommand{\kQuestionsFrame}[1]{{%
+    \setbeamertemplate{background}{%
+        \setbeamercolor{background canvas}{bg=kan-light-background}
+        {%
+            % \parbox[t][\paperheight][b]{\paperwidth}{%
+            %     \begin{center}%
+            %         \textcolor{kan-light-background}{
+            %             {\tiny Powered by~}%
+            %             {\fontfamily{lmr}\normalsize\selectfont \LaTeX}
+            %             {\small mccurdyc@allegheny.edu}
+            %         }
+            %     \end{center}%
+            % }
+        }
+    }
+    \begin{frame}
+        \begin{center}
+            {\usebeamercolor[fg]{normal text}\Huge{#1}}
+        \end{center}
+
+        \begin{center}
+        \includegraphics[scale=0.1]{images/v3-logo-circ.png}
+        \end{center}
+
+        \begin{center}
+            {\tiny Powered by~}%
+            {\fontfamily{lmr}\normalsize\selectfont \LaTeX}
+            {\tiny mccurdyc@allegheny.edu}
+        \end{center}
+    \end{frame}
+}}
+
+\mode
+<all>
