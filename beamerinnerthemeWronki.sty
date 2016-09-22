@@ -3,8 +3,10 @@
 \RequirePackage{fontspec}
 \RequirePackage{pdftexcmds}
 \usepackage{fontspec}
-\usefonttheme{serif} % default family is serif
-\setmainfont{Merriweather}
+\usepackage{fontenc}
+\usepackage[sfdefault]{merriweather}
+% \usefonttheme{serif} % default family is serif
+% \setmainfont{Merriweather}
 
 \setbeamertemplate{background}{%
     \setbeamercolor{background canvas}{bg=kan-dark-background}
@@ -19,16 +21,16 @@
         \textcolor{kan-text}{
             \Huge{\inserttitle}\\
             \Large{\insertsubtitle}\\
-            \vspace*{20px}
+            \vspace*{1em}
             \begin{center}
             \includegraphics[scale=0.2]{images/v3-logo-circ.png}
             \end{center}
-            \vspace*{20px}
+            \vspace*{2em}
             \large{\insertauthor}\\
-            \vspace*{10px}\normalsize{\insertdate}\\
+            \vspace*{1em}\normalsize{\insertdate}\\
             \ifx\insertdate\@empty%
             \else%
-                \vspace*{0.1cm}
+                \vspace*{1em}
                 {\usebeamerfont{date}\textcolor{kan-light-background}{\insertdate}}
             \fi%
         }
