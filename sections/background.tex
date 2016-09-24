@@ -1,7 +1,7 @@
   \begin{frame}
     \frametitle{Background}
     \begin{center}
-    \HUGE{Mutation Testing!}
+        {\HUGE Mutation Testing!}
     \end{center}
   \end{frame}
 
@@ -16,9 +16,6 @@
         \begin{tikzpicture}
           \path[->]<1> node[plain, text width=20ex]
           (Pass) at (-2.75,-.25) {\Huge \xmarkhide {Original}};
-        %
-        %   \path[->]<2-> node[plain, text width=20ex]
-        %   (Pass) at (-2.75,-.25) {\Huge \cmark {Pass}};
         \end{tikzpicture}
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
@@ -29,14 +26,6 @@
           \path[->]<1> node[plain, text width=20ex,
           yshift=0.0in, xshift=1.75in, minimum width=20ex]
           (Mutant) {\Huge \xmarkhide {Mutant}};
-       %
-       %    \path[->]<2> node[plain, text width=20ex,
-       %    yshift=-0.0in, xshift=1.75in, minimum width=20ex]
-       %    (Fail) {\Huge \xmarkhide {Fail}};
-       %
-       %    \path[->]<3-> node[plain, text width=20ex,
-       %    yshift=-0.0in, xshift=1.75in, minimum width=20ex]
-       %    (Fail) {\Huge \xmark {Fail}};
         \end{tikzpicture}
     \end{minipage}
 \end{figure}
@@ -53,9 +42,6 @@
         \begin{tikzpicture}
           \path[->]<1> node[plain, text width=20ex]
           (Pass) at (-2.75,-.25) {\Huge \xmarkhide {Original}};
-        %
-        %   \path[->]<2-> node[plain, text width=20ex]
-        %   (Pass) at (-2.75,-.25) {\Huge \cmark {Pass}};
         \end{tikzpicture}
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
@@ -66,18 +52,18 @@
           \path[->]<1> node[plain, text width=20ex,
           yshift=0.0in, xshift=1.75in, minimum width=20ex]
           (Mutant) {\Huge \xmarkhide {Mutant}};
-       %
-       %    \path[->]<2> node[plain, text width=20ex,
-       %    yshift=-0.0in, xshift=1.75in, minimum width=20ex]
-       %    (Fail) {\Huge \xmarkhide {Fail}};
-       %
-       %    \path[->]<3-> node[plain, text width=20ex,
-       %    yshift=-0.0in, xshift=1.75in, minimum width=20ex]
-       %    (Fail) {\Huge \xmark {Fail}};
         \end{tikzpicture}
     \end{minipage}
 \end{figure}
 \end{frame}
+
+  \begin{frame}
+    \frametitle{Mutation Testing}
+    \begin{center}
+        {\HUGE Mutant?} \\
+        (e.g., replacing $\&\&$ with $||$)
+    \end{center}
+  \end{frame}
 
   \begin{frame}
     \frametitle{Mutation Testing}
@@ -97,7 +83,7 @@
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
         \centering
-        \input{details/test1_mutation_fail.tex}
+        \input{details/test1_mutation.tex}
        \begin{tikzpicture}
           \path[->]<1> node[plain, text width=20ex,
           yshift=0.0in, xshift=1.75in, minimum width=20ex]
@@ -106,11 +92,73 @@
           \path[->]<2> node[plain, text width=20ex,
           yshift=-0.0in, xshift=1.75in, minimum width=20ex]
           (Killed) {\Huge \xmarkhide {Killed}};
+        \end{tikzpicture}
+    \end{minipage}
+\end{figure}
+\end{frame}
 
-          \path[->]<3-> node[plain, text width=20ex,
+  \begin{frame}
+    \frametitle{Mutation Testing}
+ \input{styles/kapfhammer-solarized-tikz-colors.tex}
+ \begin{figure}[!htb]
+    \centering
+    \begin{minipage}{0.5\textwidth}
+        \centering
+          \input{details/test1_mutation.tex}
+        \begin{tikzpicture}
+          \path[->] node[plain, text width=20ex]
+          (Alive) at (-2.75,-.25) {\Huge \cmark {Alive}};
+
+        \end{tikzpicture}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \input{details/test1_mutation_fail.tex}
+       \begin{tikzpicture}
+          \path[->]<1-> node[plain, text width=20ex,
+          yshift=-0.0in, xshift=1.75in, minimum width=20ex]
+          (Killed) {\Huge \xmarkhide {Killed}};
+
+          \path[->]<2-> node[plain, text width=20ex,
           yshift=-0.0in, xshift=1.75in, minimum width=20ex]
           (Killed) {\Huge \xmark {Killed}};
         \end{tikzpicture}
     \end{minipage}
 \end{figure}
 \end{frame}
+
+  \begin{frame}
+    \frametitle{Mutation Testing}
+    \centering
+        {\HUGE $$MS_T = \frac{Killed}{Total}$$} \\
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Mutation Testing}
+    \centering
+        {\HUGE $$MS_T = \frac{Killed}{Total}$$} \\
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Mutation Testing}
+    \centering
+    {\HUGE Silver Bullet!?}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Mutation Testing}
+    \centering
+    {\HUGE Problems}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Mutation Testing}
+    \centering
+    {\HUGE Advances?}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Mutation Testing}
+    \centering
+    {\HUGE Still $\dots$ Problems}
+  \end{frame}
