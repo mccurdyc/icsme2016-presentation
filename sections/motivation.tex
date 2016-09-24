@@ -1,0 +1,101 @@
+%!TEX root=icsme2016-mccurdyc.tex
+% mainfile: icsme2016-mccurdyc.tex
+
+% \include{details/introduction_database_environments}
+
+  \begin{frame}
+    \frametitle{Motivation}
+    \begin{center}
+    \HUGE{Why are we here?}
+    \end{center}
+  \end{frame}
+
+
+\setbeamercovered{invisible}
+\begin{frame}%[label=current]
+  \frametitle{Motivation}
+  \framesubtitle{\mbox{}}
+
+  % \vspace*{.3in}
+  % \begin{center}
+  %   \fontsize{90}{72}\selectfont
+  %   O(\uncover<2->{\textcolor{solarizedViolet}{?}})
+  % \end{center}
+
+ \input{styles/kapfhammer-solarized-tikz-colors.tex}
+ \begin{figure}[!htb]
+    \centering
+    \begin{minipage}{0.5\textwidth}
+        \centering
+          \input{details/test1.tex}
+        \begin{tikzpicture}
+          \path[->]<1> node[plain, text width=20ex]
+          (Pass) at (-2.75,-.25) {\Huge \cmarkhide {Pass}};
+
+          \path[->]<2-> node[plain, text width=20ex]
+          (Pass) at (-2.75,-.25) {\Huge \cmark {Pass}};
+        \end{tikzpicture}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \input{details/test2.tex}
+       \begin{tikzpicture}
+          \path[->]<1> node[plain, text width=20ex,
+          yshift=-0.0in, xshift=1.75in, minimum width=20ex]
+          (Fail) {\Huge \xmarkhide {Fail}};
+
+          \path[->]<2> node[plain, text width=20ex,
+          yshift=-0.0in, xshift=1.75in, minimum width=20ex]
+          (Fail) {\Huge \xmarkhide {Fail}};
+
+          \path[->]<3-> node[plain, text width=20ex,
+          yshift=-0.0in, xshift=1.75in, minimum width=20ex]
+          (Fail) {\Huge \xmark {Fail}};
+        \end{tikzpicture}
+    \end{minipage}
+\end{figure}
+
+
+
+\end{frame}
+
+\begin{frame}[t]
+  \frametitle{Search-Based Testing}
+  \framesubtitle{\mbox{}}
+
+  % \vspace*{.25in}
+  \hspace{.15in}
+  \begin{minipage}{3.0in}
+    \begin{figure}
+      \resizebox{3.75in}{!}{
+        \begin{tikzpicture}
+          \begin{axis}[
+              domain=0:1,
+              xmax=1,
+              ymax=1,
+            ]
+            \addplot3[surf] {x*y};
+            \addplot3[solarizedRebase0,/pgfplots/quiver,
+                quiver/u=y,
+                quiver/v=x,
+                quiver/w=0,
+                quiver/scale arrows=0.1,
+              -stealth,samples=10] {1};
+          \end{axis}
+      \end{tikzpicture}}
+    \end{figure}
+  \end{minipage}
+
+  % \vspace*{.1in}
+  % \input{styles/kapfhammer-solarized-tikz-colors.tex}
+  % \begin{figure}
+  %   \begin{centering}
+  %     \begin{tikzpicture}
+  %       \path[->]<2-> node[special,]
+  %         (Requirements) at (0,.75)
+  %         {Often much more effective than random testing};
+  %     \end{tikzpicture}
+  %   \end{centering}
+  % \end{figure}
+
+\end{frame}
