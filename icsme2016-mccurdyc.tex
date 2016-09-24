@@ -1,0 +1,92 @@
+%!TEX root=icsme2016-mccurdyc.tex
+% mainfile: icsme2016-mccurdyc.tex
+
+\documentclass[hyperref]{beamer}
+
+% \usecolortheme[light]{solarized}
+\usecolortheme[accent=blue,dark]{solarized}
+
+\beamertemplatetransparentcovered
+
+\usepackage[utf8]{inputenc}
+\usepackage{merriweather}
+\usepackage{moresize}
+\usepackage{anyfontsize}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usepgfplotslibrary{colormaps,external}
+
+\usepackage{pifont}
+\newcommand{\cmark}{{\color{solarizedGreen}\ding{51}}}
+\newcommand{\xmark}{{\color{solarizedOrange}{\ding{55}}}}
+\newcommand{\cmarkhide}{{\color{kapfhammerDarkGrey}\ding{51}}}
+\newcommand{\xmarkhide}{{\color{kapfhammerDarkGrey}{\ding{55}}}}
+\newcommand\sql[1]{{\tt \small #1}}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,shadows,arrows,shapes,calc,backgrounds}
+
+\setbeamercolor{background canvas}{bg=solarizedBase3}
+% \setbeamercolor{background canvas}{bg=kapfhammerDarkGrey}
+
+\setbeamertemplate{section in toc shaded}[default][65]
+\setbeamertemplate{subsection in toc shaded}[default][65]
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamerfont{title}{size=\huge,series=\rmfamily,parent=merriweather}
+\setbeamerfont{frametitle}{size=\HUGE,series=\rmfamily,parent=merriweather}
+\setbeamerfont{framesubtitle}{size=\normalsize,series=\rmfamily,parent=merriweather}
+\setbeamerfont{subtitle}{size=\normalsize,series=\bfseries,parent=merriweather}
+\setbeamerfont{author}{size=\LARGE,series=\bfseries,parent=merriweather}
+\setbeamerfont{institute}{size=\normalsize,series=\bfseries,parent=merriweather}
+\setbeamerfont{date}{size=\normalsize,series=\bfseries,parent=merriweather}
+
+\setbeamercolor{title}{fg=solarizedBlue}
+% \setbeamercolor{title}{fg=solarizedOrange}
+\setbeamercolor{subtitle}{fg=solarizedOrange}
+% \setbeamercolor{subtitle}{fg=solarizedViolet}
+\setbeamercolor{frametitle}{fg=solarizedRebase00}
+\setbeamercolor{framesubtitle}{fg=solarizedRebase00}
+\setbeamercolor{author}{fg=solarizedRebase00}
+\setbeamercolor{institute}{fg=solarizedRebase00}
+\setbeamercolor{date}{fg=solarizedRebase00}
+
+\addtobeamertemplate{frametitle}{\vskip.1in}{}
+
+
+\title{mrstudyr}
+\subtitle{Retrospective Mutant Reduction}
+
+\author[McCurdy]{Colton J. McCurdy}
+\institute[ICSME 2016]{ICSME 2016}
+\date[October 6, 2016]{October 6, 2016}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% \section{Motivation}
+% \input{sections/introduction.tex}
+%
+% \section{Background}
+% \input{sections/background.tex}
+%
+% \section{Technique}
+% \input{sections/technique.tex}
+%
+% \section{Experiment Design}
+% \input{sections/experiments.tex}
+%
+% \section{Results}
+% \input{sections/results.tex}
+%
+% \section{Conclusion}
+% \input{sections/conclusion.tex}
+
+\end{document}

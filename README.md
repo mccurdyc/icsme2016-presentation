@@ -1,24 +1,36 @@
-# beamer-theme
+# seke2015-presentation
 
-This is my custom beamer (LaTeX) theme. It is built upon an existing, and awesome beamer theme in [Wronki](http://kaszkowiak.eu/wronki-a-new-beamer-template/_).
-Additionally, I received inspiration and guidance in changing the color scheme to the [Solarized](http://ethanschoonover.com/solarized)
-from this link [here](http://www.zovirl.com/2011/07/22/solarized_cheat_sheet/).
+This repository contains the LaTeX source code and additional resources for a presentation that I, [Gregory M.
+Kapfhammer](http://www.cs.allegheny.edu/sites/gkapfham), helped to develop and [Cody
+Kinneer](https://github.com/kinneerc) gave at the 27th International Conference on Software Engineering and Knowledge
+Engineering (SEKE 2015).  The presentation's source code uses a wide variety of LaTeX packages, such as `beamer` and
+`pgftikz`, in order to create each slide.  I have developed a custom theme for the display of the slides and the use of
+progressive revealing of technical diagrams.
 
-If you do want to use this clean beamer theme, all that I ask is that you star this repository and you
-give me and the other links in this document credit. I hope that you enjoy this theme as much
-as I did creating it! Have fun!
+You are welcome to use these slides as inspiration for your own presentation. If you find this example useful, could I
+trouble you to star this repository and then acknowledge it in your own presentation slides? If you would like to learn
+more about my research program, then you can checkout my
+[gkapfham/research-bibliography](https://github.com/gkapfham/research-bibliography).
 
-## Cloning
+You can type the following command if you want to clone this repository:
 
-`git clone https://github.com/mccurdyc/beamer-theme.git`
+```shell
+git clone https://github.com/gkapfham/seke2015-presentation.git
+```
 
-## Compiling
+Then, if you want to compile the presentation to a PDF, you should type the following commands.
 
-You need to compile using `LuaLaTeX` in order to support the custom fonts.
-Additionally, the `-shell-escape` is only necessary if you want to use the `minted` package for source code highlighting.
+```shell
+cd seke2015-presentation
+pdflatex kinneer_seke.tex
+pdflatex kinneer_seke.tex
+```
 
-`lualatex -shell-escape beamer.tex`
-
-`lualatex -shell-escape beamer.tex`
+Please note that this has been tested on an Ubuntu 15.04 workstation running a very recent version of LaTeX that was
+manually installed using the TeXLive installer. It is worth noting that you can also compile the paper using other LaTeX
+development tools, such as `latexmk`. Additionally, you may find that the placement of certain `pgftikz` diagrams
+requires manual adjustment depending on your LaTeX development environment and other settings. If you are unable to
+compile the presentation with your development tools and your execution environment, then please open a new issue and I
+will attempt to resolve your concerns.
 
 
