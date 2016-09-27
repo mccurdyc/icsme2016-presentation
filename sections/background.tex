@@ -1,6 +1,7 @@
   \begin{frame}
     \frametitle{Background}
     \begin{center}
+        % TODO: need to add 1 or 2 more words
         {\HUGE Mutation Testing!}
     \end{center}
   \end{frame}
@@ -12,20 +13,20 @@
     \centering
     \begin{minipage}{0.5\textwidth}
         \centering
-          \input{details/test1.tex}
+          \input{details/program1.tex}
         \begin{tikzpicture}
           \path[->]<1> node[plain, text width=20ex]
-          (Pass) at (-2.75,-.25) {\Huge \xmarkhide {Original}};
+          (Pass) at (-2.75,-.25) {\Huge Original};
         \end{tikzpicture}
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
         \centering
         \vspace*{-0.8em} % issue with text under box
-        \input{details/test1_mutation.tex}
+        \input{details/program1_mutation.tex}
        \begin{tikzpicture}
           \path[->]<1> node[plain, text width=20ex,
           yshift=0.0in, xshift=1.75in, minimum width=20ex]
-          (Mutant) {\Huge \xmarkhide {Mutant}};
+          (Mutant) {\Huge Mutant};
         \end{tikzpicture}
     \end{minipage}
 \end{figure}
@@ -38,20 +39,20 @@
     \centering
     \begin{minipage}{0.5\textwidth}
         \centering
-          \input{details/test1.tex}
+          \input{details/program1.tex}
         \begin{tikzpicture}
           \path[->]<1> node[plain, text width=20ex]
-          (Pass) at (-2.75,-.25) {\Huge \xmarkhide {Original}};
+          (Pass) at (-2.75,-.25) {\Huge Original};
         \end{tikzpicture}
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
         \centering
         \vspace*{-0.8em} % issue with text under box
-        \input{details/test1_mutation_box.tex}
+        \input{details/program1_mutation_box.tex}
        \begin{tikzpicture}
           \path[->]<1> node[plain, text width=20ex,
           yshift=0.0in, xshift=1.75in, minimum width=20ex]
-          (Mutant) {\Huge \xmarkhide {Mutant}};
+          (Mutant) {\Huge Mutant};
         \end{tikzpicture}
     \end{minipage}
 \end{figure}
@@ -59,10 +60,10 @@
 
   \begin{frame}
     \frametitle{Mutation Testing}
-    \begin{center}
-        {\HUGE Mutant?} \\
-        (e.g., replacing $\&\&$ with $||$)
-    \end{center}
+    % \begin{center}
+        % {\HUGE Mutant?} \\
+        \input{details/mutant.tex}
+    % \end{center}
   \end{frame}
 
   \begin{frame}
@@ -72,7 +73,7 @@
     \centering
     \begin{minipage}{0.5\textwidth}
         \centering
-          \input{details/test1_mutation.tex}
+          \input{details/program1_mutation.tex}
         \begin{tikzpicture}
           \path[->]<1> node[plain, text width=20ex]
           (Alive) at (-2.75,-.25) {\Huge \cmarkhide {Alive}};
@@ -83,7 +84,7 @@
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
         \centering
-        \input{details/test1_mutation.tex}
+        \input{details/program1_mutation.tex}
        \begin{tikzpicture}
           \path[->]<1> node[plain, text width=20ex,
           yshift=0.0in, xshift=1.75in, minimum width=20ex]
@@ -104,7 +105,7 @@
     \centering
     \begin{minipage}{0.5\textwidth}
         \centering
-          \input{details/test1_mutation.tex}
+          \input{details/program1_mutation.tex}
         \begin{tikzpicture}
           \path[->] node[plain, text width=20ex]
           (Alive) at (-2.75,-.25) {\Huge \cmark {Alive}};
@@ -113,7 +114,7 @@
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
         \centering
-        \input{details/test1_mutation_fail.tex}
+        \input{details/program1_mutation_fail.tex}
        \begin{tikzpicture}
           \path[->]<1-> node[plain, text width=20ex,
           yshift=-0.0in, xshift=1.75in, minimum width=20ex]
@@ -127,23 +128,63 @@
 \end{figure}
 \end{frame}
 
-  \begin{frame}
-    \frametitle{Mutation Testing}
-    \centering
-        {\HUGE $$MS_T = \frac{Killed}{Total}$$} \\
-  \end{frame}
+  % \begin{frame}
+  %   \frametitle{Mutation Testing}
+  %   \centering
+  %   \vspace*{-2cm}
+  %       \fontsize{50}{50}\selectfont{$$MS_T = \frac{Killed}{Total}$$}
+  % \end{frame}
+  %
+  % \begin{frame}
+  %   \frametitle{Mutation Testing}
+  %   \centering
+  %   \vspace*{-2cm}
+  %   \fontsize{50}{50}\selectfont{$$MS_T = \frac{{\textcolor{solarizedBlue}{Killed}}}{Total}$$}
+  % \end{frame}
 
   \begin{frame}
     \frametitle{Mutation Testing}
+    \input{styles/kapfhammer-solarized-tikz-colors.tex}
+    \begin{figure}[!htb]
     \centering
-    {\HUGE $$MS_T = \frac{{\textcolor{solarizedBlue}{Killed}}}{Total}$$} \\
-  \end{frame}
+        \centering
+        \vspace*{-3.5cm}
+        {\fontsize{50}{50}\selectfont{$$MS_T = \frac{Killed}{Total}$$}}
+    \end{figure}
+    \end{frame}
 
   \begin{frame}
     \frametitle{Mutation Testing}
+    \input{styles/kapfhammer-solarized-tikz-colors.tex}
+    \begin{figure}[!htb]
     \centering
-    {\HUGE $$MS_T = \frac{Killed}{{\textcolor{solarizedBlue}{Total}}}$$} \\
-  \end{frame}
+        \centering
+        \vspace*{-3.5cm}
+        {\fontsize{50}{50}\selectfont{$$MS_T = \frac{\textcolor{solarizedViolet}{Killed}}{Total}$$}}
+    \end{figure}
+    \end{frame}
+
+  \begin{frame}
+    \frametitle{Mutation Testing}
+    \input{styles/kapfhammer-solarized-tikz-colors.tex}
+    \begin{figure}[!htb]
+    \centering
+        \centering
+        \vspace*{-3.5cm}
+        {\fontsize{50}{50}\selectfont{$$MS_T = \frac{Killed}{\textcolor{solarizedViolet}{Total}}$$}}
+    \end{figure}
+    \end{frame}
+
+  \begin{frame}
+    \frametitle{Mutation Testing}
+    \input{styles/kapfhammer-solarized-tikz-colors.tex}
+    \begin{figure}[!htb]
+    \centering
+        \vspace*{-2.15cm}
+        {\fontsize{50}{50}\selectfont{$$MS_T = \frac{Killed}{Total}$$}}
+        \input{details/mutation_score.tex}
+    \end{figure}
+    \end{frame}
 
   \begin{frame}
     \frametitle{Mutation Testing}
@@ -154,17 +195,21 @@
   \begin{frame}
     \frametitle{Mutation Testing}
     \centering
-    {\HUGE Problems}
+    {\HUGE Limitations of Mutation Testing}
   \end{frame}
+
+  % Commetting out to save compile time
+  % \begin{frame}
+  %   \frametitle{Mutation Testing}
+  %   \begin{figure}[!htb]
+  %   \centering
+  %   \visible<2->{\HUGE T= $\langle$ {\textcolor{solarizedViolet}{$t_1$, $t_2$, $\dots$, $t_n$} $\rangle$}}
+  %   \small{\input{details/many_mutants.tex}}
+  %   \end{figure}
+  %   \end{frame}
 
   \begin{frame}
     \frametitle{Mutation Testing}
     \centering
-    {\HUGE Advances?}
-  \end{frame}
-
-  \begin{frame}
-    \frametitle{Mutation Testing}
-    \centering
-    {\HUGE Still $\dots$ Problems}
+    {\HUGE Still $\dots$ limitations}
   \end{frame}

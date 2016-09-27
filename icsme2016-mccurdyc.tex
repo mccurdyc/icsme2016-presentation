@@ -3,7 +3,6 @@
 
 \documentclass[hyperref]{beamer}
 
-% \usecolortheme[light]{solarized}
 \usecolortheme[accent=blue,dark]{solarized}
 
 \beamertemplatetransparentcovered
@@ -14,26 +13,41 @@
 \usepackage{anyfontsize}
 \usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{fontawesome}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{array}
+\usepackage{subcaption}
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.9}
 \usepgfplotslibrary{colormaps,external}
 
 \usepackage{pifont}
-\newcommand{\cmark}{{\color{green}\ding{51}}}
-\newcommand{\xmark}{{\color{red}{\ding{55}}}}
-\newcommand{\cmarkhide}{{\color{solarizedBase3}\ding{51}}}
-\newcommand{\xmarkhide}{{\color{solarizedBase3}{\ding{55}}}}
+\newcommand{\cmark}{{\color{solarizedGreen}\ding{51}}}
+\newcommand{\xmark}{{\color{solarizedRed}{\ding{55}}}}
+\newcommand{\cmarkhide}{{\color{solarizedBase2}\ding{51}}}
+\newcommand{\xmarkhide}{{\color{solarizedBase2}{\ding{55}}}}
 % \newcommand{\cmark}{{\color{solarizedGreen}\ding{51}}}
 % \newcommand{\xmark}{{\color{solarizedOrange}{\ding{55}}}}
 % \newcommand{\cmarkhide}{{\color{kapfhammerDarkGrey}\ding{51}}}
 % \newcommand{\xmarkhide}{{\color{kapfhammerDarkGrey}{\ding{55}}}}
 \newcommand\sql[1]{{\tt \small #1}}
 
+
+%% Rotated table column type
+\newcolumntype{R}[2]{%
+    >{\adjustbox{minipage=6em,angle=#1,lap=\width-(#2)}\bgroup}%
+    l%
+    <{\egroup}%
+}
+\newcommand*\rot{\multicolumn{1}{R{40}{1.5em}}}
+
 \usepackage{tikz}
 \usetikzlibrary{positioning,shadows,arrows,shapes,calc,backgrounds}
 
-\setbeamercolor{background canvas}{bg=solarizedBase3}
+\setbeamercolor{background canvas}{bg=solarizedBase2}
 % \setbeamercolor{background canvas}{bg=kapfhammerDarkGrey}
 
 \setbeamertemplate{section in toc shaded}[default][65]
@@ -41,7 +55,8 @@
 
 \setbeamertemplate{navigation symbols}{}
 
-\setbeamerfont{title}{size=\huge,series=\rmfamily,parent=merriweather}
+\setbeamerfont{title}{size=\HUGE,series=\rmfamily,parent=merriweather}
+% \setbeamerfont{title}{size=\Huge,series=\rmfamily,parent=merriweather}
 \setbeamerfont{frametitle}{size=\HUGE,series=\rmfamily,parent=merriweather}
 \setbeamerfont{framesubtitle}{size=\normalsize,series=\rmfamily,parent=merriweather}
 \setbeamerfont{subtitle}{size=\normalsize,series=\bfseries,parent=merriweather}
@@ -53,10 +68,10 @@
 % \setbeamercolor{title}{fg=solarizedOrange}
 \setbeamercolor{subtitle}{fg=solarizedOrange}
 % \setbeamercolor{subtitle}{fg=solarizedViolet}
-% \setbeamercolor{frametitle}{fg=solarizedRebase00}
-% \setbeamercolor{framesubtitle}{fg=solarizedRebase00}
-\setbeamercolor{frametitle}{fg=kapfhammerDarkGrey}
-\setbeamercolor{framesubtitle}{fg=kapfhammerDarkGrey}
+\setbeamercolor{frametitle}{fg=solarizedBase02}
+\setbeamercolor{framesubtitle}{fg=solarizedBase02}
+% \setbeamercolor{frametitle}{fg=kapfhammerDarkGrey}
+% \setbeamercolor{framesubtitle}{fg=kapfhammerDarkGrey}
 \setbeamercolor{author}{fg=solarizedRebase00}
 \setbeamercolor{institute}{fg=solarizedRebase00}
 \setbeamercolor{date}{fg=solarizedRebase00}
@@ -67,10 +82,11 @@
 
 \usepackage{listings}
 
-\title{mrstudyr}
+\title{\fontsize{50}{50}\selectfont{mrstudyr}}
 \subtitle{Retrospective Mutant Reduction}
 
-\author[McCurdy]{Colton J. McCurdy}
+\author[McCurdy]{Colton J. McCurdy\\
+{\small \href{https://twitter.com/McCurdyColton}{\textcolor{solarizedOrange}{\fontsize{15}{30}{\faTwitter}\small McCurdyColton}}}}
 \institute[ICSME 2016]{ICSME 2016}
 \date[September 23, 2016]{October 6, 2016}
 
@@ -104,10 +120,10 @@
 \section{Conclusion}
 \input{sections/conclusion.tex}
 
-\section{Future Work}
-\input{sections/future.tex}
+% \section{Future Work}
+% \input{sections/future.tex}
 
-\section{Questions}
-\input{sections/questions.tex}
+\section{Grand Finale}
+\input{sections/finale.tex}
 
 \end{document}
