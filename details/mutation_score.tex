@@ -1,0 +1,12 @@
+\begin{tikzpicture}[node distance=0cm, auto,>=stealth, thick]
+
+    \tikzstyle{box}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedBlue, drop shadow,
+            text centered, anchor=north, minimum width = 4cm, minimum height = 2cm, text=white, text width=4cm]
+    \tikzstyle{boxo}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedOrange, drop shadow,
+            text centered, anchor=north, minimum width = 4cm, minimum height = 2cm, text=white, text width=4cm]
+
+            \visible<1->{\node (score) [box] at (-3, -3) {\Huge R: $0 - 1$};}
+            \visible<2->{\node (metric) [boxo, right = 1cm of score] {\Huge HIB};}
+
+
+\end{tikzpicture}

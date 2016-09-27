@@ -1,0 +1,28 @@
+\begin{tikzpicture}[node distance=0cm, auto,>=stealth, thick]
+
+    \tikzstyle{mutant}=[rectangle, draw=solarizedBase02, rounded corners, fill=white, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 0.2cm, text width=0.1cm]
+    \tikzstyle{mutantviolet}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedViolet, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 0.2cm, text width=0.1cm]
+    \tikzstyle{mutantred}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedRed, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 0.2cm, text width=0.1cm]
+    \tikzstyle{mutantblue}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedBlue, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 0.2cm, text width=0.1cm]
+    \tikzstyle{mutantorange}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedOrange, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 0.2cm, text width=0.1cm]
+    \tikzstyle{mutantlightblue}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedBlue!25, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 0.2cm, text width=0.1cm]
+    \tikzstyle{mutantlightorange}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedOrange!25, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 0.2cm, text width=0.1cm]
+    \tikzstyle{operator}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedOrange, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 1cm, text width=8cm]
+    \tikzstyle{smallbox}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedBlue, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 1cm, text width=2cm]
+
+  \visible<1->{
+    \foreach \x in {0,...,8}
+    \foreach \y in {0,...,8}
+       {\pgfmathtruncatemacro{\label}{\x - 3 *  \y + 30}
+   \node [mutantviolet]  (\x\y) at (0.5*\x,0.5*\y) {};}}
+
+\end{tikzpicture}

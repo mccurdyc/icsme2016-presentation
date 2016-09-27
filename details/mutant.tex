@@ -1,0 +1,24 @@
+\begin{tikzpicture}[node distance=0cm, auto,>=stealth, thick]
+
+
+    \tikzstyle{box}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedBlue, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 1cm, text width=3cm]
+    \tikzstyle{operator}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedOrange, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 1cm, text width=8cm]
+    \tikzstyle{smallbox}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedBlue, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 1cm, text width=2cm]
+
+            \visible<1->{\node (op) [box] {a \textcolor{yellow}{$<$ op $>$} \textcolor{white}{b}};}
+            \visible<2->{\node (operator) [operator, below = 1cm of op] {Mutant Operator Replacement (MOR)};}
+            \visible<3->{\node (op1) [smallbox] at (-4.25cm, -4cm) {a \&\& b};}
+            \visible<3->{\node (op2) [smallbox, right = 0.5cm of op1] {a $||$ b};}
+            \visible<3->{\node (op3) [smallbox, right = 0.5cm of op2] {a $==$ b};}
+            \visible<3->{\node (op4) [smallbox, right = 0.5cm of op3] {a $!=$ b};}
+
+            \visible<1->{\draw[->, line width = 4pt] (op) -- (operator);}
+            \visible<3->{\draw[->, line width = 4pt] (operator) -- (op1);}
+            \visible<3->{\draw[->, line width = 4pt] (operator) -- (op2);}
+            \visible<3->{\draw[->, line width = 4pt] (operator) -- (op3);}
+            \visible<3->{\draw[->, line width = 4pt] (operator) -- (op4);}
+
+\end{tikzpicture}
