@@ -1,16 +1,20 @@
 \begin{tikzpicture}[node distance=0cm, auto,>=stealth, thick]
 
     \tikzstyle{box}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedBlue, drop shadow,
-            text centered, anchor=north, minimum width = 3.5cm, minimum height = 2cm, text=white, text width=3.25cm]
+            text centered, anchor=north, minimum width = 2cm, minimum height = 1cm, text=white, text width=2cm]
     \tikzstyle{boxo}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedOrange, drop shadow,
             text centered, anchor=north, minimum width = 3.5cm, minimum height = 2cm, text=white, text width=3.25cm]
+    \tikzstyle{boxv}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedViolet, drop shadow,
+            text centered, anchor=north, minimum width = 3.5cm, minimum height = 0.6cm, text=solarizedOrange, text width=10cm]
+    \tikzstyle{boxplain}=[rectangle, draw=solarizedBase2, fill=solarizedBase2,
+            text centered, anchor=north]
 
-    \visible<2->{\HUGE {\textcolor{solarizedOrange}{\href{https://github.com/mccurdyc/mrstudyr}{\faGithub\,mccurdyc/mrstudyr}}}}
-            \visible<1->{\normalsize \input{details/mrstudyr-logo.tex}}
+            \visible<1->{\node (logo) [boxplain] {\input{details/mrstudyr-logo.tex}};}
+            \visible<2->{\node (github) [boxv, above=0.6cm of logo] {\href{https://github.com/mccurdyc/mrstudyr}{\Huge \faGithub\,mccurdyc/mrstudyr}};}
 
-            \visible<3->{\node (in) [box] at (-1,0) {\Huge Data};}
-            \visible<4->{\node (perform) [box, right = 0.6cm of in] {\Huge Reduce};}
-            \visible<5->{\node (remove) [box, right = 0.6cm of perform] {\Huge Remove};}
+            \visible<4->{\node (perform) [box, below = 0.6cm of logo] {Reduce};}
+            \visible<3->{\node (in) [box, left= 0.6cm of perform] {Data};}
+            \visible<5->{\node (remove) [box, right = 0.6cm of perform] {Remove};}
 
             \visible<3->{\draw[->, line width = 4pt] (in) -- (perform);}
             \visible<4->{\draw[->, line width = 4pt] (perform) -- (remove);}
