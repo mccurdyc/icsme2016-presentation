@@ -1,0 +1,19 @@
+\begin{tikzpicture}[node distance=0cm, auto,>=stealth, thick]
+
+    \tikzstyle{box}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedBlue, drop shadow,
+            text centered, anchor=north, minimum width = 3.5cm, minimum height = 2cm, text=white, text width=3.25cm]
+    \tikzstyle{boxo}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedOrange, drop shadow,
+            text centered, anchor=north, minimum width = 3.5cm, minimum height = 2cm, text=white, text width=3.25cm]
+
+    \visible<2->{\HUGE {\textcolor{solarizedOrange}{\href{https://github.com/mccurdyc/mrstudyr}{\faGithub\,mccurdyc/mrstudyr}}}}
+            \visible<1->{\normalsize \input{details/mrstudyr-logo.tex}}
+
+            \visible<3->{\node (in) [box] at (-1,0) {\Huge Data};}
+            \visible<4->{\node (perform) [box, right = 0.6cm of in] {\Huge Reduce};}
+            \visible<5->{\node (remove) [box, right = 0.6cm of perform] {\Huge Remove};}
+
+            \visible<3->{\draw[->, line width = 4pt] (in) -- (perform);}
+            \visible<4->{\draw[->, line width = 4pt] (perform) -- (remove);}
+
+
+\end{tikzpicture}

@@ -1,0 +1,13 @@
+\begin{tikzpicture}[>={Triangle[fill=solarizedBase2, width=30mm,length=20mm]},->]
+
+    \tikzstyle{xbox}=[rectangle, draw=solarizedRed, fill=solarizedBase02, line width=1mm,
+            text centered, anchor=north, minimum width = 1cm, minimum height = 0.5cm, text=red, text width=0.8cm]
+    \tikzstyle{cbox}=[rectangle, draw=solarizedGreen, fill=solarizedBase02, line width=1mm,
+            text centered, anchor=north, minimum width = 1cm, minimum height = 0.5cm, text=red, text width=0.8cm]
+
+      \draw[line width=14mm, draw=solarizedBase02] (4.5,0) -- (0,0);
+      % \node (x) [xbox] at (0,0) {};
+      \path[->] node[xbox] (x) at (2.6,0.56) {\HUGE \xmark {}};
+      \path[->] node[cbox] (c) at (3.8,0.56) {\HUGE \cmark {}};
+
+\end{tikzpicture}
