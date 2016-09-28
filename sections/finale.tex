@@ -1,13 +1,17 @@
   \begin{frame}
+      % TODO: fix the weird spacing on this slide
     \frametitle{Grand Finale}
     \begin{columns}
-    \begin{column}{0.3\textwidth}
-       \input{details/few_mutants.tex}
+    \begin{column}{0.5\textwidth}
+        \centering
+        \visible<1->{\input{details/few_mutants.tex}}
     \end{column}
     \hfill%
-    \begin{column}{0.3\textwidth}
-        \fontsize{90}{72}\selectfont 10\%
-        {\textcolor{solarizedOrange}{\href{https://github.com/mccurdyc/mrstudyr}{\fontsize{90}{72}{\faGithub}}}}
+    \begin{column}{0.6\textwidth}
+        \centering
+        \visible<2->{\fontsize{90}{72}\selectfont 10\%}
+        \visible<3->{\textcolor{solarizedBase02}{\rule{0.8\textwidth}{2pt}}}
+        \visible<3->{\textcolor{solarizedOrange}{\href{https://github.com/mccurdyc/mrstudyr}{\fontsize{90}{72}{\faGithub}}}}
     \end{column}
     \end{columns}
     \end{frame}

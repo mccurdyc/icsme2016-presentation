@@ -20,8 +20,8 @@
             text centered, anchor=north, text=white, minimum height = 1cm, text width=2cm]
 
   \visible<1->{
-    \foreach \x in {0,...,8}
-    \foreach \y in {0,...,8}
+    \foreach \x in {0,...,6}
+    \foreach \y in {0,...,6}
        {\pgfmathtruncatemacro{\label}{\x - 3 *  \y + 30}
    \node [mutantviolet]  (\x\y) at (0.5*\x,0.5*\y) {};}}
 

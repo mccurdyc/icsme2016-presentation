@@ -1,0 +1,20 @@
+\begin{tikzpicture}[node distance=0cm, auto,>=stealth, thick]
+
+
+    \tikzstyle{box}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedBlue, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 0.6cm, text width=8cm]
+    \tikzstyle{boxv}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedOrange, drop shadow,
+            text centered, anchor=north, text=white, minimum height = 0.6cm, text width=8cm]
+
+            \visible<1->{\node (quality) [box] {Program Quality};}
+            \visible<2->{\node (testsuite) [box, below = 0.6cm of quality] {Regression Test Suite};}
+            \visible<3->{\node (mutation) [box, below = 0.6cm of testsuite] {Mutation Testing};}
+            \visible<4->{\node (reduction) [box, below = 0.6cm of mutation] {Reduction Techniques};}
+            \visible<5->{\node (retrospective) [boxv, below = 0.6cm of reduction] {mrstudyr};}
+
+            \visible<2->{\draw[->, line width = 4pt] (quality) -- (testsuite);}
+            \visible<3->{\draw[->, line width = 4pt] (testsuite) -- (mutation);}
+            \visible<4->{\draw[->, line width = 4pt] (mutation) -- (reduction);}
+            \visible<5->{\draw[->, line width = 4pt] (reduction) -- (retrospective);}
+
+\end{tikzpicture}
