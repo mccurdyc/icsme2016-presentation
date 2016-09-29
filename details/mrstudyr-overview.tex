@@ -1,7 +1,9 @@
 \begin{tikzpicture}[node distance=0cm, auto,>=stealth, thick]
 
     \tikzstyle{box}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedBlue, drop shadow,
-            text centered, anchor=north, minimum width = 2cm, minimum height = 1cm, text=white, text width=2cm]
+            text centered, anchor=north, minimum width = 3cm, minimum height = 1cm, text=white, text width=3cm]
+    \tikzstyle{bigbox}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedBlue, drop shadow,
+            text centered, anchor=north, minimum width = 2cm, minimum height = 1cm, text=white, text width=10cm]l
     \tikzstyle{boxo}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedOrange, drop shadow,
             text centered, anchor=north, minimum width = 3.5cm, minimum height = 2cm, text=white, text width=3.25cm]
     \tikzstyle{boxv}=[rectangle, draw=solarizedBase02, rounded corners, fill=solarizedViolet, drop shadow,
@@ -10,14 +12,14 @@
             text centered, anchor=north]
 
             \visible<1->{\node (logo) [boxplain] {\input{details/mrstudyr-logo.tex}};}
-            \visible<2->{\node (github) [boxv, above=0.6cm of logo] {\href{https://github.com/mccurdyc/mrstudyr}{\Huge \faGithub\,mccurdyc/mrstudyr}};}
+            \visible<2->{\node (github) [bigbox, above=0.3cm of logo] {\href{https://github.com/mccurdyc/mrstudyr}{\Huge \faGithub\,mccurdyc/mrstudyr}};}
 
-            \visible<4->{\node (perform) [box, below = 0.6cm of logo] {Reduce};}
-            \visible<3->{\node (in) [box, left= 0.6cm of perform] {Data};}
-            \visible<5->{\node (remove) [box, right = 0.6cm of perform] {Remove};}
+            \visible<4->{\node (perform) [box, below = 0.3cm of logo] {\LARGE Reduce};}
+            \visible<3->{\node (in) [box, left= 0.6cm of perform] {\LARGE Data};}
+            \visible<5->{\node (remove) [box, right = 0.6cm of perform] {\LARGE Remove};}
 
-            \visible<3->{\draw[->, line width = 4pt] (in) -- (perform);}
-            \visible<4->{\draw[->, line width = 4pt] (perform) -- (remove);}
+            \visible<4->{\draw[->, line width = 4pt] (in) -- (perform);}
+            \visible<5->{\draw[->, line width = 4pt] (perform) -- (remove);}
 
 
 \end{tikzpicture}
