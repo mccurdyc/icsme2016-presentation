@@ -92,7 +92,7 @@
 
           \path[->]<2> node[plain, text width=20ex,
           yshift=-0.0in, xshift=1.75in, minimum width=20ex]
-          (Killed) {\Huge \xmarkhide {Killed}};
+          (killed) {\Huge \xmarkhide {Killed}};
         \end{tikzpicture}
     \end{minipage}
 \end{figure}
@@ -109,7 +109,6 @@
         \begin{tikzpicture}
           \path[->] node[plain, text width=20ex]
           (Alive) at (-2.75,-.25) {\Huge \cmark {Alive}};
-
         \end{tikzpicture}
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
@@ -120,7 +119,7 @@
           yshift=-0.0in, xshift=1.75in, minimum width=20ex]
           (Killed) {\Huge \xmarkhide {Killed}};
 
-          \path[->]<2-> node[plain, text width=20ex,
+          \path[->]<1-> node[plain, text width=20ex,
           yshift=-0.0in, xshift=1.75in, minimum width=20ex]
           (Killed) {\Huge \xmark {Killed}};
         \end{tikzpicture}
@@ -208,11 +207,11 @@
     \input{details/integration.tex}
   \end{frame}
 
-  \begin{frame}
-    \frametitle{Mutation Testing}
-    \centering
-    {\fontsize{40}{40}\selectfont{Retrospective Mutant Reduction}}
-  \end{frame}
+  % \begin{frame}
+  %   \frametitle{Mutation Testing}
+  %   \centering
+  %   {\fontsize{40}{40}\selectfont{Retrospective Mutant Reduction}}
+  % \end{frame}
 
   \begin{frame}
     \frametitle{Mutation Testing}
