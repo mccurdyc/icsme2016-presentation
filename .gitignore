@@ -5,5 +5,15 @@
 **/*.toc
 **/*.snm
 **/*.pdf
+**/*.dvi
+**/*.fdb_latexmk
+**/*.fls
+**/*.lof
+**/*.lot
+**/*.out
+**/*.pdf
+**/*.ps
+**/*.tex~
+**/*_minted*
 _minted-icsme-2016-presentation
 _minted-icsme2016-presentation/*
