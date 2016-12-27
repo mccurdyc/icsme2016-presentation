@@ -1,5 +1,7 @@
 # icsme2016-presentation
 
+![Sample of the ICSME 2016 Presentation](icsme2016-mccurdyc.png)
+
 This repository contains the LaTeX source code and additional resources for a
 presentation that I, [Colton J. McCurdy](http://coltonmccurdy.com/) (with the
 advice and assistance of [Gregory M.
