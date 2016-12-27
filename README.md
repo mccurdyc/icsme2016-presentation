@@ -40,7 +40,7 @@ xelatex icsme2016-mccurdyc.tex
 ```
 
 Please note that this has been tested on an Arch Linux 4.7.6 workstation running
-a very recent version of LaTeX (pdfTeX 3.14159265-2.6-1.40.17 TeX Live 2016/Arch
+a recent version of LaTeX (pdfTeX 3.14159265-2.6-1.40.17 TeX Live 2016/Arch
 Linux) that was installed using the [pacman package
 manager](https://wiki.archlinux.org/index.php/pacman). It is worth noting that
 you can also compile the paper using other LaTeX development tools, such as
