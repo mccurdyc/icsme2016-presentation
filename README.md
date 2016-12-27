@@ -1,10 +1,12 @@
 # icsme2016-presentation
 
-This repository contains the LaTeX source code and additional resources for a presentation that I, [Colton
-J. McCurdy](http://coltonmccurdy.com/) gave at the 32nd IEEE International Conference on Software Maintenance
-and Evolution (ICSME 2016).  The presentation's source code uses a wide variety of LaTeX packages, such as `beamer` and
-`pgftikz`, in order to create each slide.  I have developed a custom theme for the display of the slides and the use of
-progressive revealing of technical diagrams.
+This repository contains the LaTeX source code and additional resources for a
+presentation that I, [Colton J. McCurdy](http://coltonmccurdy.com/) gave at the
+32nd IEEE International Conference on Software Maintenance and Evolution (ICSME
+2016). The presentation's source code uses a wide variety of LaTeX packages,
+such as `beamer` and `pgftikz`, in order to create each slide. I have developed
+a custom theme for the display of the slides and the use of progressive
+revealing of technical diagrams.
 
 You are welcome to use these slides as inspiration for your own presentation. If you find this example useful, could I
 trouble you to star this repository and then acknowledge it in your own presentation slides?
