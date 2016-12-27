@@ -29,8 +29,9 @@ pdflatex icsme2016-mccurdyc.tex
 pdflatex icsme2016-mccurdyc.tex
 ```
 
-If this does not work and you notice that some of the icons are rendering at a
-font size that is too small, then please try the following commands instead.
+If this does not work well because you notice that some of the icons are
+rendering at a font size that is too small, then please try the following
+commands instead.
 
 ```shell
 cd icsme2016-presentation
