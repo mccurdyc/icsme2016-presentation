@@ -3,14 +3,13 @@
 ![Sample of the ICSME 2016 Presentation](icsme2016-mccurdyc.png)
 
 This repository contains the LaTeX source code and additional resources for a
-presentation that I, [Colton J. McCurdy](http://coltonmccurdy.com/) (with the
-advice and assistance of [Gregory M.
-Kapfhammer](http://www.cs.allegheny.edu/sites/gkapfham/)) gave at the 32nd IEEE
-International Conference on Software Maintenance and Evolution (ICSME 2016). The
-presentation's source code uses a wide variety of LaTeX packages, such as
-`beamer` and `pgftikz`, in order to create each slide. I have developed a custom
-theme for the display of the slides and the use of progressive revealing of
-technical diagrams.
+presentation that I, [Colton J. McCurdy](https://mccurdyc.dev/), with the advice
+and assistance of [Gregory M. Kapfhammer](https://www.gregorykapfhammer.com/),
+gave at the 32nd IEEE International Conference on Software Maintenance and
+Evolution (ICSME 2016). The presentation's source code uses a wide variety of
+LaTeX packages, such as `beamer` and `pgftikz`, in order to create each slide. I
+have developed a custom theme for the display of the slides and the use of
+progressive revealing of technical diagrams.
 
 You are welcome to use these slides as inspiration for your own presentation. If
 you find this example useful, could I trouble you to star this repository and
@@ -47,9 +46,8 @@ Linux) that was installed using the [pacman package
 manager](https://wiki.archlinux.org/index.php/pacman). It is worth noting that
 you can also compile the paper using other LaTeX development tools, such as
 `latexmk` (but note that to ensure certain icons are not sized correctly you may
-need to configure `latexmk` to use `xelatex`). Additionally, you may find that
-the placement of certain `pgftikz` diagrams requires manual adjustment depending
-on your LaTeX development environment and other settings. If you are unable to
-compile the presentation with your development tools and your execution
-environment, then please open a new issue and I will attempt to resolve your
-concerns.
+need to configure `latexmk` to use `xelatex`). You may find that the placement
+of certain `pgftikz` diagrams requires manual adjustment depending on your LaTeX
+development environment and other settings. If you are unable to compile the
+presentation with your development tools and your execution environment, then
+please open a new issue and I will attempt to resolve your concerns.
